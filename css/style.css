@@ -1,0 +1,358 @@
+body{height: auto !important;}
+
+.clearer{clear: both}
+
+#SplashScreenPage{
+ background:  url(../images/bg.jpg) no-repeat center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.splashPanel{
+	display: block;
+	width:242px;
+	height:242x;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin:-150px 0 0 -125px;
+}
+
+.splashPanel a img{margin-top: 50px}
+
+
+/* Home page */
+#HomePage {
+	font-size:13px;
+	padding:10px 0px 0px 0px;
+	margin: 0px;
+	text-align:center;
+	background: linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -moz-linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -o-linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -webkit-linear-gradient(#EEEEEE, #DDDDDD) ;
+}
+
+#HomePage .ui-content {
+    padding: 0px;
+}
+
+#HomePage p {padding:0 15px;}
+
+#HomePage h2{
+ background-color: #abb147;
+ background-image: -moz-linear-gradient(top,#abb147,#66a2a);
+ background-image: -o-linear-gradient(top,#abb147,#66a2a);
+ background-image: -webkit-linear-gradient(top,#abb147,#66a2a);
+ border-top:solid 1px #acaeb0;
+ border-bottom:solid 1px #acaeb0;
+ color:#ffffff;
+ font-family:Helvetica,Arial,Verdana,sans-serif;
+ font-size:16px;
+ line-height:32px;
+ text-shadow:0 1px #333333;
+}
+
+#MainListView 
+{
+	background: linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -moz-linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -o-linear-gradient(#EEEEEE, #DDDDDD) ;
+	background: -webkit-linear-gradient(#EEEEEE, #DDDDDD) ;
+}
+
+#MainListView h1{color:#000099; padding: 0px}
+
+#MainListView img{margin: 13px 0px 0px 12px; width: 200px; height: 200px}
+
+#MainListView  h1.liParagraph {
+	color:#cc0000;
+	overflow:show;
+	text-overflow:clip;
+	white-space:normal;
+	height:28px;
+}
+#MainListView   .liComment {
+	overflow:show;
+	text-overflow:clip;
+	white-space:normal;
+	height:28px;
+	margin-bottom:0px;
+}
+
+#MainListView  .icon-play {position: absolute; bottom: 62%; right: 10px; background-image: url("../images/play_btn.png"); border-radius: 15px 15px 15px 15px; height: 35px; width: 35px; background-position: 0px 0px; cursor:pointer}
+#MainListView  .icon-stop {position: absolute; bottom: 62%; right: 10px; background-image: url("../images/stop_btn.png"); border-radius: 15px 15px 15px 15px; height: 35px; width: 35px; background-position: 0px 0px; cursor:pointer}
+
+#MainListView li {padding-bottom:7px !important; padding-top:0 !important; padding-right: 0 !important;}
+
+/* Photo Page*/
+#PhotoPage .flexslider {border:none !important;}
+/*#PhotoPage .flex-control-nav {bottom:25px; width: 80%; position:relative; margin: 0 auto;}*/
+
+#PhotoPage .flex-control-paging li a.flex-active {background:white;}
+#PhotoPage .flex-control-paging li a {border:2px solid white; background:transparent;}
+
+/* Friends Page*/
+#FriendsPage .ui-content{padding: 0px}
+#FriendsPage .content-image {max-width:400px; height:180px; margin: 0 auto;}
+#FriendsPage .content-image {background-image:url('../images/Friends/hello.jpg');background-size:100% 100%; background-repeat : no-repeat;}
+#FriendsPage ul[data-role='listview'] {margin:0;}
+#FriendsPage ul[data-role='listview'] li img {margin-left:5px; margin-top:15px;}
+
+#FriendsPage .ui-btn-up-b:nth-child(1) {
+    border: 1px solid #25729a /*{a-bup-border}*/;
+    background: #3093c7 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #3093c7 /*{a-bup-background-start}*/ ), to( #1c5a85 /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #3093c7 /*{a-bup-background-start}*/, #1c5a85 /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #3093c7 /*{a-bup-background-start}*/, #1c5a85 /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #3093c7 /*{a-bup-background-start}*/, #1c5a85 /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #3093c7 /*{a-bup-background-start}*/, #1c5a85 /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #3093c7 /*{a-bup-background-start}*/, #1c5a85 /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-hover-b:nth-child(1){
+   border: 1px solid #25729a /*{a-bhover-border}*/;
+    background: #3093c7 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #3093c7 /*{a-bhover-background-start}*/ ), to( #1c5a85 /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #3093c7 /*{a-bhover-background-start}*/, #1c5a85 /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #3093c7 /*{a-bhover-background-start}*/, #1c5a85 /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #3093c7 /*{a-bhover-background-start}*/, #1c5a85 /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #3093c7 /*{a-bhover-background-start}*/, #1c5a85 /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #3093c7 /*{a-bhover-background-start}*/, #1c5a85 /*{a-bhover-background-end}*/ );
+}
+#FriendsPage .ui-btn-up-b:nth-child(2) {
+     border: 1px solid #34740e /*{b-bup-border}*/;
+    background: #4ba614 /*{b-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{b-bup-color}*/;
+    text-shadow: 0 /*{b-bup-shadow-x}*/ 1px /*{b-bup-shadow-y}*/ 0 /*{b-bup-shadow-radius}*/ #444444 /*{b-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #4ba614 /*{b-bup-background-start}*/), to( #008c00 /*{b-bup-background-end}*/));
+    background-image: -webkit-linear-gradient( #4ba614 /*{b-bup-background-start}*/, #008c00 /*{b-bup-background-end}*/);
+    background-image: -moz-linear-gradient( #4ba614 /*{b-bup-background-start}*/, #008c00 /*{b-bup-background-end}*/);
+    background-image: -ms-linear-gradient( #4ba614 /*{b-bup-background-start}*/, #008c00 /*{b-bup-background-end}*/);
+    background-image: -o-linear-gradient( #4ba614 /*{b-bup-background-start}*/, #008c00 /*{b-bup-background-end}*/);
+    background-image: linear-gradient( #4ba614 /*{b-bup-background-start}*/, #008c00 /*{b-bup-background-end}*/);
+}
+#FriendsPage .ui-btn-hover-b:nth-child(2){
+    border: 1px solid #34740e /*{b-bhover-border}*/;
+    background: #4ba614 /*{b-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{b-bhover-color}*/;
+    text-shadow: 0 /*{b-bhover-shadow-x}*/ 1px /*{b-bhover-shadow-y}*/ 0 /*{b-bhover-shadow-radius}*/ #444444 /*{b-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #4ba614 /*{b-bhover-background-start}*/), to( #008c00 /*{b-bhover-background-end}*/));
+    background-image: -webkit-linear-gradient( #4ba614 /*{b-bhover-background-start}*/, #008c00 /*{b-bhover-background-end}*/);
+    background-image: -moz-linear-gradient( #4ba614 /*{b-bhover-background-start}*/, #008c00 /*{b-bhover-background-end}*/);
+    background-image: -ms-linear-gradient( #4ba614 /*{b-bhover-background-start}*/, #008c00 /*{b-bhover-background-end}*/);
+    background-image: -o-linear-gradient( #4ba614 /*{b-bhover-background-start}*/, #008c00 /*{b-bhover-background-end}*/);
+    background-image: linear-gradient( #4ba614 /*{b-bhover-background-start}*/, #008c00 /*{b-bhover-background-end}*/);
+}
+
+#FriendsPage .ui-btn-up-b:nth-child(4) {
+    border: 1px solid #f7931e /*{a-bup-border}*/;
+    background: #f7931e /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFa121 /*{a-bup-background-start}*/ ), to( #de841b /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-hover-b:nth-child(4) {
+    border: 1px solid #FFa922 /*{a-bhover-border}*/;
+    background: #FFa922 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFb925 /*{a-bhover-background-start}*/ ), to( #e5981e /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+}
+
+#FriendsPage .ui-btn-hover-b:nth-child(3) {
+    border: 1px solid #616261 /*{a-bup-border}*/;
+    background: #616261 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #7d7e7d /*{a-bup-background-start}*/ ), to( #3f4c6b /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #7d7e7d /*{a-bup-background-start}*/, #3f4c6b /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #7d7e7d /*{a-bup-background-start}*/, #3f4c6b /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #7d7e7d /*{a-bup-background-start}*/, #3f4c6b /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #7d7e7d /*{a-bup-background-start}*/, #3f4c6b /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #7d7e7d /*{a-bup-background-start}*/, #3f4c6b /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-up-b:nth-child(3) {
+    border: 1px solid #616261 /*{a-bhover-border}*/;
+    background: #616261 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #7d7e7d /*{a-bhover-background-start}*/ ), to( #3f4c6b /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #7d7e7d /*{a-bhover-background-start}*/, #3f4c6b /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #7d7e7d /*{a-bhover-background-start}*/, #3f4c6b /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #7d7e7d /*{a-bhover-background-start}*/, #3f4c6b /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #7d7e7d /*{a-bhover-background-start}*/, #3f4c6b /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #7d7e7d /*{a-bhover-background-start}*/, #3f4c6b /*{a-bhover-background-end}*/ );
+}
+#FriendsPage .ui-btn-hover-b:nth-child(6) {
+    border: 1px solid #495267 /*{a-bup-border}*/;
+    background: #606c88 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #606c88 /*{a-bup-background-start}*/ ), to( #6d0019 /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-up-b:nth-child(6) {
+    border: 1px solid #495267 /*{a-bhover-border}*/;
+    background: #606c88 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #606c88 /*{a-bhover-background-start}*/ ), to( #6d0019 /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+}
+#FriendsPage .ui-btn-hover-b:nth-child(7) {
+    border: 1px solid #ff2596 /*{a-bup-border}*/;
+    background: #ff5d60 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #ff5d60 /*{a-bup-background-start}*/ ), to( #ef007c /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #ff5d60 /*{a-bup-background-start}*/, #ef007c /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #ff5d60 /*{a-bup-background-start}*/, #ef007c /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #ff5d60 /*{a-bup-background-start}*/, #ef007c /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #ff5d60 /*{a-bup-background-start}*/, #ef007c /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #ff5d60 /*{a-bup-background-start}*/, #ef007c /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-up-b:nth-child(7) {
+    border: 1px solid #ff2596 /*{a-bhover-border}*/;
+    background: #ff5d60 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #ff5d60 /*{a-bhover-background-start}*/ ), to( #ef007c /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #ff5d60 /*{a-bhover-background-start}*/, #ef007c /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #ff5d60 /*{a-bhover-background-start}*/, #ef007c /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #ff5d60 /*{a-bhover-background-start}*/, #ef007c /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #ff5d60 /*{a-bhover-background-start}*/, #ef007c /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #ff5d60 /*{a-bhover-background-start}*/, #ef007c /*{a-bhover-background-end}*/ );
+}
+
+#FriendsPage .ui-btn-up-b:nth-child(8) {
+    border: 1px solid #f7931e /*{a-bup-border}*/;
+    background: #f7931e /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFa121 /*{a-bup-background-start}*/ ), to( #de841b /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #FFa121 /*{a-bup-background-start}*/, #de841b /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-hover-b:nth-child(8) {
+    border: 1px solid #FFa922 /*{a-bhover-border}*/;
+    background: #FFa922 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #FFb925 /*{a-bhover-background-start}*/ ), to( #e5981e /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #FFb925 /*{a-bhover-background-start}*/, #e5981e /*{a-bhover-background-end}*/ );
+}
+
+#FriendsPage .ui-btn-hover-b:nth-child(10) {
+    border: 1px solid #495267 /*{a-bup-border}*/;
+    background: #606c88 /*{a-bup-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bup-color}*/;
+    text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #444444 /*{a-bup-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #606c88 /*{a-bup-background-start}*/ ), to( #6d0019 /*{a-bup-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -moz-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -ms-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: -o-linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+    background-image: linear-gradient( #606c88 /*{a-bup-background-start}*/, #6d0019 /*{a-bup-background-end}*/ );
+}
+#FriendsPage .ui-btn-up-b:nth-child(10) {
+    border: 1px solid #495267 /*{a-bhover-border}*/;
+    background: #606c88 /*{a-bhover-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{a-bhover-color}*/;
+    text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #444444 /*{a-bhover-shadow-color}*/;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #606c88 /*{a-bhover-background-start}*/ ), to( #6d0019 /*{a-bhover-background-end}*/ ));
+    background-image: -webkit-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -moz-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -ms-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: -o-linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+    background-image: linear-gradient( #606c88 /*{a-bhover-background-start}*/, #6d0019 /*{a-bhover-background-end}*/ );
+}
+
+#FriendsPage .ui-btn-hover-b:visited, .ui-btn-hover-b:hover, .ui-btn-hover-b a.ui-link-inherit{color: #ffffff;}
+#FriendsPage .ui-btn-up-b:visited, .ui-btn-up-b a.ui-link-inherit{color: #ffffff;}
+
+/* Info Page*/
+#InfoPage .imagepadding {
+    float: left;
+    padding-right: 15px;
+}
+#InfoPage #content-header{margin-bottom: 15px; min-height: 175px;}
+
+/* About Us Page*/
+#AboutUsPage .info, #PrivatSuppoter .info {
+    display: block;
+    clear: both;
+	padding: 10px;
+    margin: 0 15px 15px 15px;
+    position: relative;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+    -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 3px;
+    -webkit-border-radius: 5px;
+    background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+    -moz-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 3px;
+    -moz-border-radius: 5px;
+}
+#AboutUsPage .content, #PrivatSuppoter .content {
+  	padding:10px;
+  	font-size:12px;
+	margin: 0 0px 0px 0px;
+  	text-align:justify;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+    -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 3px;
+    background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+    -moz-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 3px;
+}
+
+#AboutUsPage .imagepadding, #PrivatSuppoter .imagepadding {
+    padding: 0 15px 10px 0;
+    float: left;
+}
+.ui-mobile .ui-page .ui-content .ui-collapsible .ui-collapsible-heading .ui-btn-text {
+    white-space : normal;
+}

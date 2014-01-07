@@ -1,0 +1,83 @@
+CACHE MANIFEST
+
+#Cache section
+CACHE:
+
+# files to cache
+# html
+index.html
+FriendPageDetail.html
+FriendPageDetailBlue.html
+FriendPageDetailTourist.html
+
+# javascripts
+./scripts/buzz.js
+./scripts/data.js
+./scripts/jquery-1.9.1.min.js
+./scripts/index.js
+./scripts/jquery.mobile-1.3.0.min.js
+./scripts/jquery.flexslider-min.js
+./scripts/hideAddressBar.js
+
+# stylesheets
+./css/flexslider.css
+./css/jquery.mobile-1.3.0.css
+./css/style.css
+
+# images
+./css/images/ajax-loader.gif
+./css/images/icons-18-black.png
+./css/images/icons-18-white.png
+./css/images/icons-36-black.png
+./css/images/icons-36-white.png
+./images/background-title.png
+./images/bg_direction_nav.png
+./images/close.png
+./images/header.png
+./images/khmer.png
+./images/khmer7.png
+./images/main_logo.png
+./images/play_btn.png
+./images/start.png
+
+# About Us
+./images/AboutUs/HTC-AllNeu.png
+./images/AboutUs/K-ID.png
+./images/AboutUs/wilfried-xing.jpg
+./images/AboutUs/youcan_50.jpg
+./images/AboutUs/youcan_65.png
+
+# Info
+./images/Info/cb-lgflag50.jpg
+./images/Info/Map300.jpg
+
+# Friends
+./images/Friends/hello.jpg
+./images/Friends/Logo_1.jpg
+./images/Friends/Logo_2.jpg
+./images/Friends/Logo_3.jpg
+./images/Friends/Picture_1.jpg
+./images/Friends/Picture_2.jpg
+./images/Friends/Picture_3.jpg
+./images/Friends/Picture_4.jpg
+./images/Friends/TouristLogo.jpg
+
+# Photos
+./images/Photos/Bild2.jpg
+./images/Photos/ImageNeu03.jpg
+./images/Photos/landscape_01.jpg
+./images/Photos/naehen.jpg
+./images/Photos/palme_1.jpg
+./images/Photos/snake_01.jpg
+
+# Voice
+./voice/CambodiaAnthem.mp3
+
+# Files do not cache
+# Arterisk mean all other files
+NETWORK:
+*
+
+# offline.jpg will served in placed of all images in images
+FALLBACK:
+./images/   ./images/offline.jpg

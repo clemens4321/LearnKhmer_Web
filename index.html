@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+
+<!--<html lang="en" manifest="application.appcache">-->
+<html lang="en">
+<head>
+	<title>Learn Khmer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no"> 
+	<meta property="og:image" content="http://www.iicamp.org/webapp/images/khmer_1.jpg" />
+	<meta property="og:title" content="Khmer & More - Web-App by iiCamp" />
+	<meta property="og:description" content="We proudly present: Khmer Web-App of Intercultural Innovation Camp in Cambodia!" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- iPhone & Android 2.2+ -->
+	<link rel="apple-touch-icon" href="images/RnCIcon57x57.png" />
+	<!-- iPhone 4 retina display -->
+	<link rel="apple-touch-icon" sizes="114x114" href="images/RnCIcon114x114.png" />
+	<!-- iPad & iPad 2 -->
+	<link rel="apple-touch-icon" sizes="72x72" href="images/RnCIcon72x72.png" />
+	<!-- iPad retina display -->
+	<link rel="apple-touch-icon" sizes="144x144" href="images/RnCIcon144x144.png" />
+	<!-- iPhone -->
+	<link rel="apple-touch-startup-image" media="(device-width: 320px)" href="images/RnCSplash320x460.png" />
+	<!-- iPhone (Retina) -->
+	<link rel="apple-touch-startup-image"
+	      media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)"
+	      href="images/RnCSplash640x920.png" />
+	
+	<link rel="stylesheet" href="css/flexslider.css" />
+	<link href="css/jquery.mobile-1.3.0.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" /> <!-- custom css for app --> 
+	
+	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="scripts/buzz.js" type="text/javascript"></script>
+	<script src="scripts/index.js" type="text/javascript"></script> <!-- custom js for app -->
+	<script src="scripts/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery.flexslider-min.js" type="text/javascript"></script>
+	
+	<script src="./scripts/data.js" type="text/javascript"></script><!-- sample data --> 
+	<script src="scripts/hideAddressBar.js" type="text/javascript"></script>
+	
+</head>
+<body>
+    <!-- Splash Page -->
+	<div data-role="page" id="SplashScreenPage" data-dom-cache="true">
+		<section data-role="content">
+				<div class="splashPanel">
+					
+					<div class="clearer"></div>
+					
+					<a href="#HomePage" data-transition="slide" data-prefetch><img src="images/khmer.png" alt="khmer"/></a>
+					<div class="clearer"></div>
+				</div>
+		</section><!-- /content -->
+	</div><!-- /SplashScreenPage -->
+	
+    <!-- Home Page -->
+	<div data-role="page" id="HomePage" data-dom-cache="true">
+		<section data-role="content">
+		    <br><img src="./images/AboutUs/youcan_65.png" alt="you-can">
+		    <!--<p style="text-align: center; font-size: 18px;font-weight: bold; margin-top: 5px;padding-top: 
+		    0px; margin-bottom:0px;padding-bottom: 0px;">YouCan Apps</p>-->
+		    <p style="margin-top: 0px;">This App was created by students of the iiCamp <strong>"Intercultural Innovation Camp"</strong><br> 
+			Siem Reap - Cambodia			
+            </p>
+			<h2>Useful Words in Cambodian Language</h2>
+
+			<p style="font-size: 16px; color:#ec8f1f;"><strong>Impress the Locals and Have Fun!</strong></p>
+			<a href="#ListAppPage" data-transition="slide" data-prefetch><img id="start" src="images/start.png" alt="start" /></a>
+
+			<p><strong>Khmer</strong> pronounced Khe-my, <br>is the language of the Khmer people and the official language of Cambodia.<br><br>
+			<strong>Khmer</strong> has been influenced by Sanskrit and Pali, especially in the royal and religious 
+			registers, through the vehicles of Hinduism
+			and Buddhism.<br><br><strong>The Khmer alphabet</strong> has a total of 74 letters. This alphabet is used in Cambodia, Vietnam, and Thailand.
+			<span style="margin-bottom:0px;"><img src="images/khmer7.png" alt="khmer"/></span><br>
+			<span><strong>Preăh Réachéanachâk Kâmpŭchéa</strong></span><br>
+				<span>Official name of Cambodia in Khmer</span><p>
+			
+			
+		<!--	<a href="#ListAppPage" data-transition="slide" data-prefetch><img id="start" src="images/start.png" alt="start" /></a>-->
+		</section><!-- /content -->
+
+		<footer data-role="footer">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info" data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check" data-transition="slide" data-prefetch>Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /HomePage -->
+	
+    <!-- List App Page -->
+	<div data-role="page" id="ListAppPage" data-dom-cache="true">
+		<header data-role="header">
+			<a href="#HomePage" data-icon="home">Home</a>
+			<h1>Khmer Words</h1>
+			<!--<a href="./wh_snippet/index.php?city=Siem+Reap" rel="external" >Weather </a>-->
+		</header><!-- /header -->
+		
+		<section data-role="content">
+			<ul data-role="listview" data-filter="true" id="MainListView">
+				<!--
+					<li>
+						<h1 class="liHeader">Hello 001</h1>
+						<img src="images/sample01.jpg" alt="img" />
+						<p class="liParagraph">people 001</p>
+						<p class="liComment">third line 001</p>
+						<span class="icon-play" onclick="ToggleSound(this)"><audio src="http://upload.wikimedia.org/wikipedia/commons/a/a9/Tromboon-sample.ogg"></audio></span>
+					</li>
+				-->
+			</ul>
+		</section><!-- /content -->
+
+		<footer data-role="footer">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info" data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check" data-transition="slide" data-prefetch>Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="ListAppPage">-->
+	
+    <!-- Photo Page -->
+	<div data-role="page" id="PhotoPage" data-dom-cache="true" style="overflow-y:hidden;">
+		<header data-role="header" data-position="fixed" data-disable-page-zoom="false">
+			<a href="#HomePage" data-icon="home">Home</a>
+			<h1>Photo Page</h1>
+			<!--<a href="./weather_snippet/index.php?city=Siem+Reap" rel="external" >Weather </a>-->
+		</header><!-- /header -->
+		
+		<section id="PhotoPageContent" data-role="content" style="padding:0;margin:0;" >
+			<div class="flexslider" id="flex-content">
+                    <ul class="slides">
+                        
+                        <li>
+                            <img src="images/Photos/1.jpg" alt="image" />
+                        </li>
+                        <li>
+                            <img src="images/Photos/2.jpg" alt="image" />
+                        </li>
+						<li>
+                            <img src="images/Photos/3.jpg" alt="image" />
+                        </li>
+						<li>
+                            <img src="images/Photos/4.jpg" alt="bild" />
+                        </li>
+						<li>
+                            <img src="images/Photos/5.jpg" alt="snake" />
+                        </li>
+						<li>
+                            <img src="images/Photos/6.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/7.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/8.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/9.jpg" alt="landscape" />
+                        </li>
+                        <li>
+                            <img src="images/Photos/21.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/10.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/11.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/12.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/13.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/14.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/15.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/16.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/17.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/18.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/19.jpg" alt="landscape" />
+                        </li>
+						<li>
+                            <img src="images/Photos/20.jpg" alt="landscape" />
+                        </li>
+						
+                    </ul>
+            </div>
+		</section><!-- /content -->
+
+		<footer data-role="footer">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#" data-icon="grid">Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info"  data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check" data-transition="slide" data-prefetch>Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="PhotoPage">-->
+	
+    <!-- Info page -->
+	<div data-role="page" id="InfoPage" data-dom-cache="true">
+		<header data-role="header">
+			<a href="#HomePage" data-icon="home">Home</a>
+			<h1>Info page</h1>
+			<!--<a href="./weather_snippet/index.php?city=Siem+Reap" rel="external" >Weather </a>-->
+		</header><!-- /header -->
+		
+		<section data-role="content">
+            <div id="content-header">
+                <span style="font-family: HelveticaNeue-CondensedBold; color: Darkorange; font-size: 22px;font-weight: bold; text-align: center;">
+                   <center> CULTURE,CUSTOMS,ETIQUETTE</center>
+		        </span>
+               
+		        <p>
+                    <img class="imagepadding" src="./images/Info/cb-lgflag50.jpg" alt="flag">
+                    <strong>Nokor Reach</strong><br> "National Anthem" of Cambodia.<br>
+		          
+                        <img class="imagepadding" src="./images/play_btn.png" width="45px" height="45px" data-play="false" alt="play"
+						onclick="InfoSound(this)"><p><strong>Verse I </strong></p>
+						<p style="margin-top: 0px; padding-top: 0px;text-align : justify;">Heavens protect the King. Send him happiness and glory. Us, your servants want you to reign 
+						O heir of the Sovereign Builders and rule the Khmer Land and make it high and filled with honor.</p>
+                  
+                </p>
+		
+            </div>
+
+            <div data-role="collapsible-set"><!-- Collapsible field -->
+			    <div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>Facts and Statistics</h3>
+				    
+                    <ul>
+                        <li>Population: 14,952,665 (July 2012) </li>
+					    <li>Capital: Phnom Penh 2.2 million</li>
+					    <li>Riel (KHR) 1.00 USD	=	4,044.98 KHR</li>
+					    <li>Median age: 23.3 years</li> 
+					    <li>Government type: multiparty democracy under a constitutional monarchy</li>
+					    <li>National holiday: Independence Day, 9 November (1953 from France)</li>
+					    <li>GDP - per capita (PPP): $2,400 (2012 est.) (US $49,000)</li> 
+					    <li>Agriculture - products: rice, rubber, corn, vegetables, cashews, cassava (manioc), silk</li>
+					    <li>Imports - commodities: petroleum products, cigarettes, gold, construction materials, machinery, motor vehicles, 
+						    pharmaceutical products</li>
+					    <li>Exports - commodities: clothing, timber, rubber, rice, fish, tobacco, footwear</li>
+					    <li>Population below $1 (PPP) per day, percentage 28.3 (2007)</li>
+					    <li>Ethic Groups: Khmer 90%, Vietnamese 5%, Chinese 1%, other 4%</li> 
+					    <li>Religions: Theravada Buddhist 95%, other 5%</li>
+					    <li>Literacy:   total population: 77.6%</li>
+					    <li>food or waterborne diseases: bacterial and protozoal diarrhea, hepatitis A, and typhoid fever</li> 
+					    <li>vectorborne diseases: dengue fever, Japanese encephalitis, and malaria</li> 
+					    <li>Elevation extremes: highest point: Phnum Aoral 1,810 m</li>
+					    <li>Area - comparative: slightly smaller than Oklahoma</li>
+					    <li>Area: total: 181,035 sq km </li>
+					    <li>Geographic coordinates: 13 00 N, 105 00 E</li>
+					    <li>Climate: tropical; rainy, monsoon season (May to November); dry season (December to April); little seasonal temperature variation</li>
+                    </ul>
+			    </div>
+
+                <!--Custom and Etiquette-->
+                <div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>Customs and Etiquette</h3>
+				    <span style="font-family: HelveticaNeue-CondensedBold; color: Darkorange; font-size: 16px;font-weight: bolder;">Greetings</span><hr>
+				    <p style="margin-top: 0px; padding-top: 0px;text-align : justify;"><strong>Greetings in Cambodia</strong> are more than just a way 
+				    of saying "Hi". Known as "<strong>Sompeah</strong>", it involves holding your 
+				    hands together as if praying and slightly bowing the head at the same time.</p>
+				
+				    <p style="margin-top: 0px; padding-top: 0px;text-align : justify;">The <strong>"Sompeah"</strong> is appropriate for both sexes. 
+				    The height at which the hands are held depends on the social status 
+				    of the person being greeted. With equal social standing, the hands are held near the mouth. <br><br>When greeting 
+				    someone of <strong>higher social status or a monk</strong>, for instance, the hands are held higher, signifying greater respect, 
+				    and can be at the level of the nose or even the brow.
+				
+				    The bow will also be correspondingly lower.<br><br>
+				
+				    When greeting someone younger or of inferior social status, the hands are held at the level of the chin.<br><br>
+				
+				    It is not necessary to "<strong>Sompeah</strong>" taxi drivers or waiters in a restaurant or other workers in shops, etc.<br><br>
+				
+				    After the 
+				    initial introduction when you "<strong>Sompeah</strong>", it is not necessary to repeat it each time you meet afterwards, especially 
+				    with friends or colleagues at work.</p>
+				
+				    <p style="margin-top: 0px; padding-top: 0px;text-align : justify;">However you greet, you should not forget to <strong style="color: orange;">smile -:))</strong>.</p><br>
+	
+	    <!--Communication Style-->			
+				    <span style="font-family: HelveticaNeue-CondensedBold; color: Darkorange; font-size: 16px;font-weight: bold;">Communication Style</span><hr>
+				    <p style="margin-top: 0px; padding-top: 0px;text-align : justify;">To the uninitiated, communicating verbally in Cambodia can be confusing 
+				    and sometimes even frustrating. This is due to the typical <strong>non-confrontational and indirect approach</strong> that distinguishes 
+				    the Cambodian communications style.<br><br>
+				    They will tell you what they think you want to hear rather than telling you the <strong>"truth"</strong>. This often results in 
+				    getting contradictory information to the same question from different sources. <br><br>
+				
+				    As always, <strong>stay calm</strong> in such situations and do not aggravate them by pointing out the obvious.<br><br>
+				
+				    Their motivation is not malicious and they do not intend to cause you harm; rather, they aim to be polite and do not wish to bother 
+				    you with their problems. The easiest way to ask questions then is to ask those that have a simple yes/no answer and to try and piece 
+				    together the information thus gleaned into a bigger picture. <strong>Avoid the how/why questions</strong> that can cause discomfort 
+				    and even irritability.
+				
+				    <br><br>
+				    In the event of a conflict, do not try to resolve the situation directly with the other party concerned. Rather, 
+				    <strong>use a third party</strong>, 
+				    an intermediary trusted by both sides, to resolve the conflict. The conflict itself may never get mentioned. The aim is to re-establish 
+				    congenial relations and once this has been achieved, it is better not to bring up the contentious issue again. <br><br>
+				
+				
+				    <strong>The world is not as black or white for Cambodians </strong>as it is for many Westerners and therefore "yes" may not always 
+				    mean "yes" and "no" can 
+				    also have different meanings, even "yes". Therefore, a clue to the correct interpretation is often found when observing the body language 
+				    rather than the actual words. While Cambodians always smile, their smile can mean either pleasure or embarrassment, so other non-verbal 
+				    communications, such as giggling nervously, especially when bringing negative news, will assist in understanding the real message that is 
+				    being communicated.
+				    </p>
+
+				    <span style="font-family: HelveticaNeue-CondensedBold; color: Darkorange; font-size: 16px;font-weight: bold;">Making Eye Contact in Cambodia</span><hr>
+								    <p>Unlike in the West, Cambodians tend to make indirect eye contact only in most social situations. 
+				    When talking to a superior, like a manager for instance, direct eye contact is usually avoided. The same applies when speaking to an older person. However, you can follow their lead and if they look directly at you, it is fine to reciprocate but not to initiate.
+				    Conversely, when you are talking to a younger person or one of equal social standing, they will follow your lead as far as eye contact is concerned.
+				    It is common that when a man is talking to a woman, especially a much younger woman than the man, that the woman will tend to look at the ground and not at the person speaking.
+				    </p>
+				
+				    <span style="font-family: HelveticaNeue-CondensedBold; color: Darkorange; font-size: 16px;font-weight: bold;">Touch and Personal 
+				    Space in Cambodia</span><hr>
+				    <p style="margin-top: 0px; padding-top: 0px;text-align : justify;"><strong>It is recommended</strong> in a formal or business setting 
+				    to always keep 
+				    at arm's length from the next person, whether male or female.<br><br> 
+				    Physical contact between men and women should be avoided.<br><br>
+				
+				    In a social setting, follow what the others do but keeping an arm's length distance is always safe. If you are meeting 
+				    with close friends of the same sex, physical contact, including hugging and holding hands, is acceptable and there are 
+				    no sexual connotations associated with such behaviour.<br><br>
+				    However, when meeting with people of the opposite sex, one should always be careful and remain at a safe distance. 
+				    physical contact, especially in public places, is deemed to be inappropriate and any displays of affection in public should be avoided.</p><br>
+			    </div>
+
+                <div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>Geography</h3>
+                    <ul>
+                        <li><strong>Location:</strong> Southeastern Asia, bordering the Gulf of Thailand, between Thailand, Vietnam, and Laos</li>
+				        <li><strong>Geographic coordinates:</strong>
+				        13 00 N, 105 00 E</li>
+				        <li><strong>Area:</strong> total 181, 035 sq km country comparison to the world: 90</li>
+				        Area - comparative: slightly smaller than Oklahoma. Half of Germany
+				        <li><strong>Climate:</strong> tropical: rainy, monsoon season (May to November); dry season (December to April); little seasonal temperature variation</li>
+				        <li><strong>Terrain:</strong> mostly low, flat plains; mountains in southwest and north</li>
+				        <li><strong>Elevation extremes:</strong> highest point: Phnum Aoral 1,810m</li>
+				        <li><strong>Natuaral resource:</strong> oil and gas, timber, iron ore, manganese, phosphates, hydropower potentialy</li>
+				        <li><strong>Land use:</strong>
+				        arable land: 22.09%
+				        permanent crops: 0.86%
+				        other: 77.05% (2011)</li>
+				        <li><strong>freshwater withdrawal (domestic,industrial,agricultural):</strong>
+				        total: 2.18 cu km/yr (4%,2%,94%)
+				        per capita: 159.8 cu m/yr (2006)</li>
+				        <li><strong>Geographic - note:</strong>
+				        a land of paddies and forests dominated by the Mekong River and Tonle Sap (South east Asia's largest freshwater lake)</li>
+                    </ul>
+			    </div>
+
+                <div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>Economy</h3>
+				    <p>Since 2004, garments, construction, agriculture, and tourism have driven Cambodia's growth. <br><br>
+				    GDP climbed more than 6% per year between 2010 and 2012. <br><br>The garment industry currently employs more about 400,000 people 
+				    and accounts for about 70% of Cambodia's total exports. <br><br>In 2005, exploitable oil deposits were found beneath Cambodia's 
+				    territorial waters, representing a potential revenue stream for the government, if commercial extraction becomes feasible. 
+				    <br><br>Mining also is attracting some investor interest and the government has touted opportunities for mining bauxite, gold, iron 
+				    and gems. <br><br>The tourism industry has continued to grow rapidly with foreign arrivals exceeding 2 million per year since 2007 
+				    and reaching over 3 million visitors in 2012. <br><br>Cambodia, nevertheless, remains one of the poorest countries in Asia and long-term 
+				    economic development remains a daunting challenge, inhibited by endemic corruption, limited educational opportunities, high income 
+				    inequality, and poor job prospects. <br><br>Approximately 4 million people live on less than $1.25 per day and 37% of Cambodian children 
+				    under the age of 5 suffer from chronic malnutrition. <br>More than 50% of the population is less than 25 years old. The population 
+				    lacks education and productive skills, particularly in the impoverished countryside, which also lacks basic infrastructure. 
+				    <br>The Cambodian government is working with bilateral and multilateral donors, including the Asian Development Bank, the World Bank and IMF,
+				    to address the country's many pressing needs; more than 50% of the government budget comes from donor assistance. 
+				    <br>The major economic challenge for Cambodia over the next decade will be fashioning an economic environment in which the private 
+				    ector can create enough jobs to handle Cambodia's demographic imbalance.<br><br>
+				    Cambodia is concerned about Laos' extensive upstream dam construction; Cambodia and Thailand dispute sections of boundary; 
+				    in 2011 Thailand and Cambodia resorted to arms in the dispute over the location of the boundary on the precipice surmounted 
+				    by Preah Vihear temple ruins, awarded to Cambodia by ICJ decision in 1962 and part of a planned UN World Heritage site; 
+				    Cambodia accuses Vietnam of a wide variety of illicit cross-border activities; progress on a joint development area with 
+				    Vietnam is hampered by an unresolved dispute over sovereignty of offshore islands</p>
+			    </div>
+
+                <div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>Map</h3>
+				    <p><img src="./images/Info/Map300.jpg" alt="map">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				    Morbi gravida dictum ornare. Vivamus quam dolor, auctor vitae adipiscin</span></p>
+			    </div>
+            </div>
+		</section><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#" data-icon="info">Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check" data-transition="slide" data-prefetch>Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="InfoPage">-->
+	
+    <!-- About Us -->
+	<div data-role="page" id="AboutUsPage" data-dom-cache="true">
+		<header data-role="header">
+			<a href="#HomePage" data-icon="home">Home</a>
+			<h1>About Us</h1>
+			<!--<a href="./weather_snippet/index.php?city=Siem+Reap" rel="external" >Weather </a>-->
+		</header><!-- /header -->
+		
+		<section data-role="content">
+            <img src="./images/AboutUs/youcan_65.png" alt="you-can">
+			
+			    <div data-role="collapsible" data-iconpos="right">
+				    <h3>Intercultural Dialogue <br><span style="font-size:12px;">Intercultural Dialogue as a new Key Competence</span></h3>
+				    <img class="imagepadding" src="./images/AboutUs/K-ID.png" width="50%" alt="kid">
+ 
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">Intercultural dialogue (defined by the 
+				    Council of Europe) is a process that comprises an open and respectful exchange or interaction between 
+				    individuals, groups and organisations with different cultural backgrounds or world views. </p>Among its aims are: 
+					<ul><li>
+				    to develop a deeper understanding of diverse perspectives and practices;</li> <li>to increase participation and the freedom 
+				    and ability to make choices;</li> <li>to foster equality; and to enhance creative processes.</li></ul>
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">Dialogue between cultures, the oldest and most fundamental mode of democratic conversation, is an antidote to rejection and violence. 
+				    Its objective is to enable us to live together peacefully and constructively in a multicultural world and to develop a sense of community 
+				    and belonging.</p>
+
+			    </div>
+			
+			    <div data-role="collapsible" data-iconpos="right">
+				    <h3>iiCamp<br><span style="font-size:12px;">International Youth Work and Experience</span></h3>
+				    <p class=info style="text-align: center;">
+                        <strong>Experiences that change you!</strong><br> <strong>Projects that enable you!</strong><br>
+				    New possibilities in international youth work and competency development
+				    takes place each year in Siem Reap, Cambodia.
+				    Info at: <br>
+					<a href= http://www.iicamp.org style="text-decoration: none; font-weight:bold; font-size: 18px; 
+			color: #ec8f1f; border-bottom: 1px solid #999999">
+			www.iicamp.org</a><br>
+					
+					
+					
+					                 
+                    </p
+				                       
+			    ><img class="imagepadding" src="./images/AboutUs/K-Group.jpg" width="50%" alt="kgroup">
+			    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">Our <strong>"Interculture Innovation Camp"</strong> 
+				directly addresses the desire of young adults for new experiences, new learning, and the need to create 
+			    something in the 21st Century. <br><br><strong>The impact of globalisation</strong> on jobs and daily existence demands new competencies from a generation that must 
+			    see itself as individual participants in a <strong>networked global society.</strong></p>
+			    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;"><strong>Many problems </strong>today have a global dimension
+				, such as climate change, energy, raw materials, water, and food security. The distribution of 
+			    resources for the benefit of all demands an <strong>"Intercultural Dialogue"</strong> that is also capable to minimise conflicts by 
+				promoting greater understanding among people.</p>
+			    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;"><strong>Students</strong> say they are motivated by 
+				solving real-world problems. They often express a preference for doing rather than listening.<br><br>
+			    <strong>By recognizing</strong> global problem areas through practical work with young people in a developing country, participants 
+				will be motivated 
+			    to take into account global perspectives, connections and networks that they were not aware of previously. </p>
+			    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;"><strong>"International - Intercultural Competence"</strong>
+				, however, does not happen by itself. It requires a learning and development process that 
+			    cannot start early enough and that is provided by <strong>"International Innovation Camps"</strong> with qualified coaches and an <strong>
+				internationally 
+			    recognized Certificate</strong> issued by <strong>IJAB</strong> and supported by the Federal Republic of Germany. 
+				<a href= "http://www.ijab.de" style="text-decoration: none; font-weight:bold; font-size: 16px; 
+			color: #ec8f1f; border-bottom: 1px solid #999999">
+			www.ijab.de</a><br>
+				
+				
+				
+				
+				</p>
+			    </div>
+			
+			    <div data-role="collapsible" data-iconpos="right">
+				    <h3>Projects<br><span style="font-size:12px;">Projects which we are working on</span></h3>
+				    <p>Projects we have done and still doing:</p>
+
+			        <ul>
+                        <li><strong>GPS Mapping of a Cycle Map</strong> around Angkor Wat - measuring, designing and producing a real map with all explanations. 
+			        Ready for sale</li>
+			            <li>Planning and developing an App called <strong>“Learn a Language Khmer”</strong>  for mobile devices. Winner of two competitions in Germany.</li>
+			            <li>Running and maintaining <strong>different internet platforms</strong> (Facebook, Google+, Websites) to inform people about the beauty of the country and 
+			            activities of young students from the iiCamp.</li>
+			            <li><strong>Planning an App</strong> and small book about the Khmer Cuisine.</li>
+			            <li><strong>Filming and Photographing</strong> different topics and subjects.</li>
+			            <li><strong>Visiting of the UNESCO World Heritage</strong> Angkor Wat and the "Floating Villages" as well as <strong>"Intercultural Activities"</strong> 
+			            with<br> local students
+                    </ul>
+			    </div>
+				
+				<!-- Collapsible field -->
+					<div data-role="collapsible" data-collapsed="true" data-iconpos="right">
+				    <h3>iiCamp Apps <br><span style="font-size:12px;">The Mobile World of iiCamp.</span></h3>
+					
+			
+				    <p class=info style="text-align: center;">
+                        Create mobile apps for people and communities with <strong>YouCan Apps</strong>
+                    </p>
+
+		            <img class="imagepadding" src="./images/AboutUs/HTC-AllNeu.png" width="50%" alt="htc" />
+					
+			        <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">        
+			        With <strong>YouCan Apps</strong> young students learn to create mobile apps that empower them to see potential opportunities and apply imagination to real-world problems. 
+			        <br><br><strong>YouCan Apps</strong> is a platform where students from different countries are part of an <strong> "Intercultural Dialogue" </strong> to find out how best to solve real-life 
+			        problems by experimenting with mobile applications.</p>
+			        <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;"> The development is done mainly in the 
+			        <strong>iiCamps</strong>, but also throughout the year by virtual communities built from the participants 
+			        of the <strong>iiCamps</strong>.<br><br>
+			        Rather than relying on donations, we like to create useful products that have the potential to earn a living for our young students.</p>
+	               
+
+			    </div>
+			
+			    <div data-role="collapsible" data-iconpos="right">
+				  <h3>YouCan-Trust<br><span style="font-size:12px;">All about the organization...</span></h3>
+				  
+				    <center><img src="./images/AboutUs/youcan_65.png" alt="you-can"></center>
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">The company <strong>YouCan-Trust Ltd.</strong> 
+				    was founded 1999 in UK and started many charity projects in Indonesia. Main Sponsor was NewsAgency REUTERS<br>
+				    Directors: Wilfried Ifland, Inga Palme, Andy Eyschen, Lutz Lessmann</p>
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">In 2010 the company opened up a second company in Germany YouCan-Trust gGmbH and changed the main topic to <strong>"Interculutural Dialogue". </strong><br>
+				    Directors: Inga Palme, Wilfried Ifland</p>
+				
+				    <img class="imagepadding" src="./images/AboutUs/wilfried-xing.jpg" width="50%" alt="wilfried">
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">In order to prepare the next generation to be fit for the future it is necessary to fundamentally rethink learning. 
+				    The so-called “Generation Global” is faced with the challenge of questioning the inheritance received from their forefathers 
+				    and to bring the two extremes of poverty and wealth to a common denominator.</p>
+
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;">YouCan Trust offers education to adolescents via projects. We are convinced that only projects can create the relevant experience. 
+				    This practical experience gained by participating in a project develops the strengthening of self-confidence and the understanding 
+				    of global relationships.</p> 
+
+				    <strong>Mission</strong>
+				    <p style="margin-top: 0px; padding-top: 5px;text-align: justify;font-size: 14px;"><strong>YouCan-Trust gGmbH</strong> is a Non-Profit Organisation located in Düsseldorf, Germany, promoting international youth work and equality of opportunity 
+				    in the context of developing intercultural understanding. We see ourselves as partners for schools, as catalysts for "Entrepreneurial Thinking" 
+				    and as mentors for international youth work in Intercultural Innovation Camps.
+				    </p>
+
+			    </div>
+			
+			    <div data-role="collapsible" data-iconpos="right">
+				  <h3>Links<br><span style="font-size:12px;">Important Links to learn more...</span></h3>
+			
+				
+                    <p class=info style="text-align: center;">
+                        <strong>Intercultural Competence</strong> and <strong>Intercultural Dialogue</strong></p>
+   
+                    <strong>Follow</strong>
+                    <ul>					
+						<li><a href= http://www.youcan-trust.org style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						YouCan-Trust</a></li>
+						<li><a href= http://www.iicamp.org style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						iiCamp</a></li>
+						
+						<li><a href= http://www.visit-angkor.org style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						Visit-Angkor</a></li>
+						
+						
+						<li><a href= http://pinterest.com/visitangkor/ style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						Pinterest</a></li>
+						
+						<li><a href= https://twitter.com/VisitAngkor style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						Visit Angkor on Twitter</a></li>
+						
+						<li><a href= https://plus.google.com/117723401254345783786/posts style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						Visit Angkor on Google+</a></li>
+						
+						<li><a href= http://www.linkedin.com/company/youcan-trust-deutschland-gug-haftungsbeschr-nkt- style="text-decoration: none; font-weight:bold; font-size: 18px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						YouCan Trust on Linkedin</a></li>
+                
+    
+                   
+         
+                    
+                    </ul>
+                    Community <strong>"We love Cambodia"</strong> on Google+
+				    </p>
+			    </div>
+				
+				<div data-role="collapsible" data-iconpos="right">
+				  <h3>Imprint<br><span style="font-size:12px;">Who is responsible...</span></h3>
+				    
+				    <p>
+
+<strong>YouCan Trust Deutschland UG </strong>(haftungsbeschränkt)<br>
+Werstener Dorfstr. 72<br>
+40591 Düsseldorf<br>
+Tel.: 0211 - 27 12 472<br><br>
+
+
+						<a href= http://www.youcan-trust.org style="text-decoration: none; font-weight:bold; font-size: 16px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						www.youcan-trust.org</a><br><br>
+						
+						<a email:"info@youcan-trust.org" style="text-decoration: none; font-weight:bold; font-size: 16px; 
+						color: #ec8f1f; border-bottom: 1px solid #999999">
+						info@youcan-trust.org</a><br><br>
+
+
+<strong>Geschäftsführer:</strong> <br>
+Wilfried Ifland, Inga Palme<br><br>
+
+<strong>Inhaltlich verantwortlich:</strong> <br>
+Wilfried Ifland, Inga Palme <br>
+wilfried.ifland@youcan-trust.org<br><br>
+
+<strong>Sitz der Gesellschaft:</strong> Düsseldorf<br>
+Amtsgericht Düsseldorf HRB 64406<br>
+UST ID: DE274349566<br><br>
+
+<strong>YouCan Trust Deutschland UG</strong> (haftungsbeschränkt) ist eine als gemeinnützig anerkannte Körperschaft. Die Körperschaft fördert folgende gemeinnützige Zwecke: 
+Förderung der Jugendhilfe, Förderung internationaler Gesinnung, der Toleranz auf allen Gebieten der Kultur und des Völkerverständigungsgedankens. Die 
+Körperschaft ist berechtigt, für Spenden,die ihr zur Verwendung für diese Zwecke zugewendet werden, Zuwendungsbestätigungen nach amtlich vorgeschriebenem 
+Vordruck (§ 50 Abs. 1 ESTDV) auszuweisen.<br></p>
+
+			 
+            </div>
+
+		</section><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star">About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info" data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check" data-transition="slide" data-prefetch>Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="AboutUsPage">-->
+	
+    <!-- Friends Page -->
+	<div data-role="page" id="FriendsPage" data-dom-cache="true">
+		<header data-role="header" data-position="fixed" data-disable-page-zoom="false">
+			<a href="#HomePage" data-icon="home">Home</a>
+			<h1>Friends page</h1>
+			<!--<a href="./weather_snippet/index.php?city=Siem+Reap" rel="external" >Weather </a>-->
+		</header><!-- /header -->
+		
+		<section id="FriendsPageContent" data-role="content">
+			<div class="content-image">
+				
+			</div>
+			<ul data-role="listview" id="FriendListView" data-theme="b">
+			
+				
+				
+				<li>
+					<a href="./FriendPageDetail-10.html" rel="external">
+						<img src="./images/thumb/NakLogo.jpg" alt="travel">
+						<h2>The Angkor Tour Guide</h2>
+						<p>Tours/Sightseeing, Siem Reap</p>
+						<p>ratanak_eath@yahoo.com</p>
+						<p>(855) 92-725  552</p>
+					</a>
+				</li>
+				 <li>
+					<a href="./FriendPageDetail.html" rel="external">
+						<img src="./images/thumb/TravelPartner.jpg" alt="travel">
+						<h2>Cambodian Travel Partner</h2>
+						<p>Tours/Sightseeing, Siem Reap</p>
+						<p>Street 9, #289, inside fathers restaurant</p>
+						<p>(855) 63 678 6000</p>
+					</a>
+				</li>
+				
+				<li>
+                    <a href="./FriendPageDetail-1.html" rel="external">
+                        <img src="./images/thumb/SiemReapL.jpg" alt="thumb">
+                        <h2>Siem Reap Online</h2>
+                        <p>Local/Travel Website</p>
+                        <p>http://www.siemreap.net/</p>
+                        <p>email: info@siemreap.net</p>					
+                    </a>
+                </li>
+
+		
+				<li>
+					<a href="./FriendPageDetailTourist.html" rel="external">
+						<img src="./images/thumb/LogoShinta.jpg" alt="tourist">
+						<h2>Shinta Mani Siem Reap</h2>
+						<p>Mobile: +(855) 63 761 998</p>
+						<p>Website: www.shintamani.com</p>
+						<p>Email: reservation.sr@shintamani.com</p>
+						
+					</a>
+				</li>
+     <!--           <li>
+                    <a href="./FriendPageDetail-2.html" rel="external">
+                        <img src="./images/thumb/smallworldlogo-1.jpg" alt="thumb">
+                        <h2>SmallWorld Cambodia</h2>
+                        <p>Cafe · Startup · Business Center</p>
+                        <p>www.smallworldcambodia.com</p>
+                        <p>+855 77 504 106</p>
+                    </a>
+
+                </li>-->
+				
+				<li>
+                    <a href="./FriendPageDetail-2-2.html" rel="external">
+                        <img src="./images/thumb/ReaseyLogo.jpg" alt="thumb">
+                        <h2>Cambodia Life</h2>
+                        <p>Showing Amazing Cambodia to the World</p>
+                        <p>www.cambodialife.info</p>
+                        <p>info@cambodialife.info</p>
+                    </a>
+
+                </li>
+				
+				<li>
+                    <a href="./FriendPageDetail-3.html" rel="external">
+                        <img src="./images/thumb/angkorLogo.jpg" alt="thumb">
+                        <h2>Angkor Spirit Palace</h2>
+                        <p>www.angkorspiritpalace.com</p>
+                        <p>Reservation@angkorspiritpalace.com</p>
+                        <p>+855 17 908 007</p>
+                    </a>
+                </li>
+				
+				
+				<li>
+                    <a href="./FriendPageDetail-4.html" rel="external">
+                        <img src="./images/thumb/aj.jpg" alt="thumb">
+                        <h2>amazing japan</h2>
+                        <p>www.amazingjapan.eu/</p>
+                        <p>www.facebook.com/amazingjapan</p>
+                        <p>www.twitter.com/amazing_japan_</p>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="./FriendPageDetail-5.html" rel="external">
+                        <img src="./images/thumb/FatherLogo.jpg" alt="thumb">
+                        <h2>Father's Restaurant</h2>
+                        <p>Near Old Market</p>
+                        <p>239 Street 9, Siem Reap</p>
+                        <p>+855 92 963 242</p>
+                    </a>
+                </li>
+				
+			<li>
+                    <a href="./FriendPageDetail-6.html" rel="external">
+                        <img src="./images/thumb/FireflyLogo.jpg" alt="thumb">
+                        <h2>Firefly Guesthouse - Siem Reap</h2>
+                        <p>Tel./Fax +855 (0) 63 969110</p>
+                        <p>E-mail  booking@fireflyguesthouse.com</p>
+                        <p>Web   www.fireflyguesthouse.com</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="./FriendPageDetail-7.html" rel="external">
+                        <img src="./images/thumb/khmerbirdLogo.jpg" alt="thumb">
+                        <h2>KHMERBIRD</h2>
+                        <p> SANTEL PHIN</p>
+                        <p>www.khmerbird.com/</p>
+                        <p>www.facebook.com/santelphinpage</p>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="./FriendPageDetail-8.html" rel="external">
+                        <img src="./images/thumb/MiloLogo.jpg" alt="thumb">
+                        <h2>Milo Music Cambodia</h2>
+                        <p>by the pianist Aya Urata</p>
+                        <p>www.milo-music.org</p>
+                        <p>www.facebook.com/milo.angkor</p>
+                    </a>
+				</li>
+					
+				<li>
+                    <a href="./FriendPageDetail-9.html" rel="external">
+                        <img src="./images/thumb/MardyLogo.jpg" alt="thumb">
+                        <h2>Cambodia Photo Player</h2>
+                        <p>E-mail: mardy2222@gmail.com</p>
+                        <p>www.cambodiaphotoplayer.com</p>
+                        <p>Facebook:cambodiaphotoplayer</p>
+                    </a>
+				</li>	
+					
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info" data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#" data-icon="check">Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="PrivatSuppoter">-->
+    
+    
+
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" >
+				<ul>
+					<li><a href="#AboutUsPage" data-icon="star" data-transition="slide" data-prefetch>About Us</a></li>
+					<li><a href="#PhotoPage" data-icon="grid" data-transition="slide" data-prefetch>Photos</a></li>
+					<li><a href="#InfoPage" data-icon="info" data-transition="slide" data-prefetch>Info</a></li>
+					<li><a href="#FriendsPage" data-icon="check">Friends</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /	<div data-role="page" id="FriendsDetailPage">-->
+
+</body>
+</html>
